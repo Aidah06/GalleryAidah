@@ -1,6 +1,13 @@
 <?php
+error_reporting(0)
 include_once '../controllers/c_login.php';
+
 $userid = $_SESSION['userid'];
+$nama = $_SESSION['namalengkap'];
+$alamat = $_SESSION['alamat'];
+$username = $_SESSION['username'];
+$email = $_SESSION['email'];
+$jeniskelamin = $_SESSION['jeniskelamin'];
 
 include_once "validasi.php";
 
