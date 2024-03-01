@@ -80,5 +80,5 @@ $foto = new c_foto();
      </body>
  </html>
 <?php
-include_once "template/footer.php.";
+include_once "template/footer.php";
 ?>

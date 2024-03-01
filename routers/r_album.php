@@ -16,7 +16,7 @@ if ($_GET['aksi'] == 'tambah') {
 
     move_uploaded_file($tmp, '../assets/images/' . $photo);
 
-    $album->insert($albumid, $namaalbum, $deskripsi, $tanggaldibuat, $photo, $userid);
+    $album->insert($albumid=0, $namaalbum, $deskripsi, $tanggaldibuat, $photo, $userid);
 
     echo "<script> alert('album berhasil ditambahkan');
     document.location.href = '../views/v_album.php';

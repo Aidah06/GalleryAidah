@@ -16,7 +16,7 @@
         $albumid= $_POST["albumid"];
         $userid= $_POST["userid"];
         
-        $foto->insert($fotoid, $judulfoto, $deskripsifoto, $tanggalunggah, $lokasifile, $albumid, $userid);
+        $foto->insert($fotoid=0, $judulfoto, $deskripsifoto, $tanggalunggah, $lokasifile, $albumid, $userid);
 
         echo "<script> alert('foto berhasil ditambahkan');
         document.location.href ='../views/foto.php?albumid=$albumid';

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 18, 2024 at 11:21 AM
+-- Generation Time: Mar 01, 2024 at 03:54 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.0.14
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `galleryme`
+-- Database: `gallery`
 --
 
 -- --------------------------------------------------------
@@ -41,8 +41,8 @@ CREATE TABLE `album` (
 --
 
 INSERT INTO `album` (`albumid`, `namaalbum`, `deskripsi`, `tanggaldibuat`, `photo`, `userid`) VALUES
-(51, 'baru', 'yayayayay', '2024-02-15 15:11:33', 'm4.jpg', 6),
-(53, 'makanan2', 'nyaaaaaa', '2024-02-15 15:26:20', 'Screenshot (17).png', 6);
+(67, 'baru', 'ya', '2024-02-25 15:19:15', 'Screenshot (6).png', 13),
+(72, 'bca', '123', '2024-02-29 13:17:09', 'minm1.jpg', 6);
 
 -- --------------------------------------------------------
 
@@ -65,9 +65,8 @@ CREATE TABLE `foto` (
 --
 
 INSERT INTO `foto` (`fotoid`, `judulfoto`, `deskripsifoto`, `tanggalunggah`, `lokasifile`, `albumid`, `userid`) VALUES
-(31, 'makanana2', 'yayayay', '2024-02-15 15:12:06', 'm3.jpg', 51, 6),
-(32, 'yayayay', 'nya', '2024-02-15 15:12:24', 'm4.jpg', 51, 6),
-(33, 'gcgfx', 'iyadoankakakak', '2024-02-15 15:26:50', 'Screenshot (7).png', 53, 6);
+(52, 'nya', 'yyy', '2024-02-25 15:27:02', 'Screenshot (17).png', 67, 13),
+(62, 'ygtyftuj', 'tftyedw', '2024-02-29 13:17:42', 'mnm2.jpg', 72, 6);
 
 -- --------------------------------------------------------
 
@@ -88,9 +87,8 @@ CREATE TABLE `komentarfoto` (
 --
 
 INSERT INTO `komentarfoto` (`komentarid`, `fotoid`, `userid`, `isikomentar`, `tanggalkomentar`) VALUES
-(17, 32, 6, 'iya', '2024-02-18 12:22:01'),
-(18, 32, 6, 'plll', '2024-02-18 12:22:10'),
-(19, 33, 6, 'uyuyuy', '2024-02-18 13:00:12');
+(39, 52, 6, 'nya', '2024-02-28 22:16:03'),
+(40, 52, 13, 'nya', '2024-02-28 22:16:40');
 
 -- --------------------------------------------------------
 
@@ -110,8 +108,8 @@ CREATE TABLE `likefoto` (
 --
 
 INSERT INTO `likefoto` (`likeid`, `fotoid`, `userid`, `tanggallike`) VALUES
-(32, 33, 6, '0000-00-00 00:00:00'),
-(34, 32, 6, '0000-00-00 00:00:00');
+(59, 52, 13, '0000-00-00 00:00:00'),
+(62, 52, 6, '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -135,8 +133,9 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`userid`, `username`, `password`, `email`, `namalengkap`, `alamat`, `jeniskelamin`) VALUES
 (6, 'Nur Rizky', '$2y$10$332bfTjuGoBYzrhDfbdse.dPjKxQXNIyUEk6X6M7fqGBDmGSj6/CG', 'nirakurnia649@gmail.com', 'Nur Rizky', 'padalarang', 'Perempuan'),
-(9, 'antoni', '$2y$10$RG6q92g5ROEkWGr2ofPg7uZxrwE9pTpOl1SfgWVlHdLGUxFsjruaO', 'antoni1@gmail.com', 'Antonio Blanco', 'Jakarta', 'Laki-Laki'),
-(13, 'aidah', '$2y$10$X6Lk5GoyQBdBzalEyg3Xu.PaIDpCWCf9qO0lVsU9DURSTt2Rn/tqC', 'aidahsalsabil01@gmail.com', 'Aidah Salsabil', 'Padalarang', 'Laki-Laki');
+(13, 'aidah', '$2y$10$X6Lk5GoyQBdBzalEyg3Xu.PaIDpCWCf9qO0lVsU9DURSTt2Rn/tqC', 'aidahsalsabil01@gmail.com', 'Aidah Salsabil', 'Padalarang', 'Laki-Laki'),
+(14, 'chika', '$2y$10$JKTYOZg55wNNhhnyGhA8q.59J3UmIxopsORS5SAmjykB/H0rD0R5i', 'chika123@gmail.com', 'Chika Ijtimalia', 'ciburuy', 'Perempuan'),
+(99, 'tasya', '$2y$10$TmCddRtrmpPbxbm1IpCZ0e/3YWHgaaOBQ4Q5ftw3dXC2ZPaGvQmiq', 'tasya1@gmail.com', 'tasya wahidah', 'leuwigajah', 'Perempuan');
 
 --
 -- Indexes for dumped tables
@@ -187,31 +186,31 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `album`
 --
 ALTER TABLE `album`
-  MODIFY `albumid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
+  MODIFY `albumid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=73;
 
 --
 -- AUTO_INCREMENT for table `foto`
 --
 ALTER TABLE `foto`
-  MODIFY `fotoid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `fotoid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=63;
 
 --
 -- AUTO_INCREMENT for table `komentarfoto`
 --
 ALTER TABLE `komentarfoto`
-  MODIFY `komentarid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `komentarid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
 --
 -- AUTO_INCREMENT for table `likefoto`
 --
 ALTER TABLE `likefoto`
-  MODIFY `likeid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `likeid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=63;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `userid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `userid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=100;
 
 --
 -- Constraints for dumped tables

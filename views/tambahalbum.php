@@ -66,6 +66,9 @@ $tanggal = date("Y-m-d H:i:s");
   <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
+<?php
+ include_once "template/footer.php";
+?>
 
 
 

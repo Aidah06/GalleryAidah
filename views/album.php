@@ -71,5 +71,5 @@ $baru = new c_album();
 
 </html>
 <?php
-include_once "template/footer.php.";
+include_once "template/footer.php";
 ?>

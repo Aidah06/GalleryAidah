@@ -10,7 +10,7 @@ if ($_GET['aksi'] == 'tambah') {
     $isikomentar = $_POST['isikomentar'];
     $tanggalkomentar = $_POST['tanggalkomentar'];
 
-    $komen->insert_komentar($komentarid, $fotoid, $userid, $isikomentar, $tanggalkomentar);
+    $komen->insert_komentar($komentarid=0, $fotoid, $userid, $isikomentar, $tanggalkomentar);
     header("Location:../views/dfoto.php?fotoid=$fotoid");
 
 } elseif ($_GET['aksi'] == 'hapus') {

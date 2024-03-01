@@ -69,3 +69,6 @@ $tanggal = date("Y-m-d H:i:s");
 </body>
 
 </html>
+<?php
+ include_once "template/footer.php";
+?>

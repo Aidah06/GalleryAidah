@@ -10,7 +10,7 @@ if ($_GET['aksi'] == 'like') {
     $userid = $_GET['userid'];
     $fotoid = $_GET['fotoid'];
 
-    $like->like($likeid, $fotoid, $userid, $tanggallike);
+    $like->like($likeid=0, $fotoid, $userid, $date);
 
     header("Location: ../views/dfoto.php?fotoid=$fotoid");
 
