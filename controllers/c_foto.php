@@ -25,7 +25,8 @@ class c_foto{
             return $rows;
         }
     }
-    public function read1($fotoid){
+    //read_postingan artinya adalah read foto yang ada dalam foto postingan
+    public function read_postingan($fotoid){
         $conn = new c_conn();
         $query = "SELECT foto.*, user.* FROM foto INNER JOIN user ON foto.userid = user.userid WHERE fotoid = $fotoid";
         $data = mysqli_query($conn->conn(), $query);

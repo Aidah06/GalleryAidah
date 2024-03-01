@@ -15,14 +15,12 @@ date_default_timezone_set('Asia/Jakarta');
 $waktu = date("Y-m-d H:i:s");
 ?>
 <main id="main" class="main">
-	<?php foreach ($foto->read1($_GET['fotoid']) as $read) : ?>
+	<?php foreach ($foto->read_postingan($_GET['fotoid']) as $read) : ?>
 		<div class="card">
 		<div class="card-body">
 			<div class="container">
 				<div class="user-block">
-				<!-- <a class="nav-link nav-profile d-flex align-items-center pe-0" data-bs-toggle="dropdown"> -->
-					 <div class="row">
-                       </div>
+					 
                     </a>
                 </div>
             </div>
@@ -49,7 +47,7 @@ $waktu = date("Y-m-d H:i:s");
                             <a class="nav-link nav-profile align-items-center pe-0" data-bs-toggle="dropdown">
 							
                                 <span class="username text-dark"><?= $komen->username ?>
-                                <span style="margin-left: 80%;">
+                                <span style="margin-left: 70%;">
                                     <?= $komen->tanggalkomentar ?>
                                 </span>
                                 <br>

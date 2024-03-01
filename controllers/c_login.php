@@ -16,8 +16,12 @@ class c_login{
         }else{
             $query =  mysqli_query($conn->conn(),"INSERT INTO user VALUES ('$userid', '$username', '$password', '$email','$namalengkap','$alamat', '$jeniskelamin')");
              
-            header("location: ../index.php");
-            exit;
+            echo "<script> alert('Akun telah berhasil di registrasi!');
+            document.location.href = '../index.php';
+            </script>";
+    
+            // header("location: ../index.php");
+            // exit;
 
         }
      } 

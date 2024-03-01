@@ -23,9 +23,7 @@ $tanggal = date("Y-m-d H:i:s");
             <div class="card mb-0">
               <div class="card-body">
                 <a class="text-nowrap logo-img text-center d-block py-1 w-100">
-                  <!-- <img src="../assets/images/logos/dark-logo.svg" width="180" alt="">
-                </a> -->
-       
+                 
                 <h1 class="text-center">Edit Album</h1>
                 <?php foreach($album->edit($_GET['albumid']) as $edit) : ?>
                  <form action="../routers/r_album.php?aksi=edit" method="post" enctype="multipart/form-data">
@@ -56,7 +54,7 @@ $tanggal = date("Y-m-d H:i:s");
                   </div>
                   
                   
-                 <input type="submit" name="edit" class="btn btn-primary w-100 py-6 fs-4 mb-4 rounded-2" value="Edit">
+                 <input type="submit" name="edit" class="btn btn-primary w-100 py-6 fs-4 mb-4 rounded-2" value="Edit Album">
                  <p class="sign-up text-center"><a href="index.php"></a></p>
                   <div class="d-flex align-items-center justify-content-center">
                   </div>

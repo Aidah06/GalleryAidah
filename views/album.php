@@ -56,9 +56,9 @@ $baru = new c_album();
                 <div class="d-flex align-items-center justify-content-between">
                   <ul class="list-unstyled d-flex align-items-center mb-0">
                   <p class="py-4">
-            <?= $read->deskripsi ?>
-            </p>                
-            </ul>
+                     <?= $read->deskripsi ?>
+                    </p>                
+                  </ul>
                 </div>
               </div>
             </div>

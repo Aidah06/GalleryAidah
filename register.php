@@ -21,8 +21,7 @@
             <div class="card mb-0">
               <div class="card-body">
                 <a class="text-nowrap logo-img text-center d-block py-1 w-100">
-                  <!-- <img src="../assets/images/logos/dark-logo.svg" width="180" alt="">
-                </a> -->
+              
                 <h1 class="text-center">Gallery</h1>
                  <form action="routers/r_login.php?aksi=register" method="post">
                     <div class="form-group row">
