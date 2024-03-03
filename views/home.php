@@ -12,7 +12,6 @@ $home = new c_foto();
             <div class="card-body">
                 <h5 class="card-title fw-semibold mb-4"></h5>
                 <p class="mb-0">Welcome to gallery </p>
-            </div>
           </div>
         </div>
           
