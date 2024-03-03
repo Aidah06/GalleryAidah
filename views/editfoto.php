@@ -34,7 +34,7 @@ $tanggal = date("Y-m-d H:i:s");
                   </div>
                   
                   <div class="mb-2">
-                    <input type="text" class="form-control" name="judulfoto"  placeholder="Judul Foto" aria-describedby="textHelp" value="<?= $edit->judulfoto ?>">
+                    <input type="text" class="form-control" name="judulfoto"  placeholder="Judul Foto" aria-describedby="textHelp" value="<?= $edit->judulfoto ?>" required>
                   </div>
 
                   <div class="form-group mb-2 mt-3">
@@ -47,7 +47,7 @@ $tanggal = date("Y-m-d H:i:s");
 
                   <div class="col-md-12 form-group mb-3 mt-3 mt-md-0">
                    
-                    <input type="file" class="form-control"  value="<?= $edit->lokasifile ?>" name="lokasifile" id="lokasifile" placeholder="lokasi foto" aria-describedby="textHelp">
+                    <input type="file" class="form-control"  value="<?= $edit->lokasifile ?>" name="lokasifile" id="lokasifile" placeholder="lokasi foto" aria-describedby="textHelp" required>
                   </div>
                   <div class="form-group">
                       <input type="text" class="form-control form-control-user" id="albumid" name="albumid" placeholder="albumid" value="<?= $edit->albumid ?>"hidden>

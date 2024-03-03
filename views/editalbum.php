@@ -33,7 +33,7 @@ $tanggal = date("Y-m-d H:i:s");
                   </div>
                   
                   <div class="mb-2">
-                    <input type="text" class="form-control" name="namaalbum" id="namaalbum" placeholder="Nama Album" aria-describedby="textHelp"  value="<?= $edit->namaalbum ?>">
+                    <input type="text" class="form-control" name="namaalbum" id="namaalbum" placeholder="Nama Album" aria-describedby="textHelp"  value="<?= $edit->namaalbum ?>"required>
                   </div>
 
                   <div class="form-group mt-3">
@@ -46,7 +46,7 @@ $tanggal = date("Y-m-d H:i:s");
 
                   <div class="col-md-12 form-group mt-3 mt-md-0 mb-3">
                    
-                    <input type="file" class="form-control" value="<?= $edit->photo?>" name="photo" id="photo" aria-describedby="textHelp">
+                    <input type="file" class="form-control" value="<?= $edit->photo?>" name="photo" id="photo" aria-describedby="textHelp" required>
                   </div>
 
                   <div class="form-group">
