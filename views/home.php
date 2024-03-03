@@ -11,7 +11,7 @@ $home = new c_foto();
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title fw-semibold mb-4"></h5>
-                <p class="mb-0">welcome to gallery </p>
+                <p class="mb-0">Welcome to gallery </p>
             </div>
           </div>
         </div>
@@ -40,7 +40,7 @@ $home = new c_foto();
     </section><!-- End Gallery Section -->
 
   </main><!-- End #main -->
-
+  
 <?php
 
 include_once "template/footer.php";
