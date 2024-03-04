@@ -46,7 +46,7 @@ $foto = new c_foto();
        <div class="container-fluid">
          <div class="row gy-4 justify-content-center">
            <?php foreach ($foto->read($_GET['albumid']) as $read) : ?>
-          <div class="col-sm-6 col-xl-3">
+          <div class="col-sm-4 col-xl-3">
             <div class="card overflow-hidden rounded-2">
               <div class="position-relative">
                 <?php

@@ -32,7 +32,7 @@ $baru = new c_album();
           echo'<h3 class="text-secondary">  tidak memiliki Album';
         }else{ ?>
           <?php foreach ($baru->read() as $read) : ?>
-          <div class="col-sm-6 col-xl-3">
+          <div class="col-sm-4 col-xl-3">
             <div class="card overflow-hidden rounded-2">
               <div class="position-relative">
               <?php

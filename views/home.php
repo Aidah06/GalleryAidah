@@ -21,7 +21,7 @@ $home = new c_foto();
         }else{ ?>
                 
                 <?php foreach($home->home() as $baru) : ?>
-                    <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="col-xl-3 col-lg-4 col-md-4">
                         <div class="gallery-item h-100">
                         <a href="dfoto.php?fotoid=<?= $baru->fotoid ?>"><img src="../assets/images/<?= $baru->lokasifile ?>" class="img" height="250px" width="210px" ></a>
                 <div class="gallery-links d-flex align-items-center justify-content-center">

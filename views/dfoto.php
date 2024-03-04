@@ -61,7 +61,7 @@ $waktu = date("Y-m-d H:i:s");
 						<?php endforeach; ?>
 						<?php } ?>
 						<form class="row g-3 mt-3" action="../routers/r_komentar.php?aksi=tambah" method="post">
-							<input type="text" name="isikomentar" class="form-control" placeholder="Comments">
+							<input type="text" name="isikomentar" class="form-control" placeholder="Comments" required>
 							<input type="text" name="komentarid" id="id" hidden >
 							<input type="text" name="userid" id="" value="<?= $userid ?>" hidden>
 							<input type="text" name="fotoid" id="" value="<?= $read->fotoid ?>" hidden>
