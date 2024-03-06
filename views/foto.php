@@ -26,7 +26,7 @@ $foto = new c_foto();
                    <?php
                    if($_SESSION['userid'] == $read->userid){
                   ?>
-                  <a class="cta-btn" href="tambahfoto.php?albumid=<?php echo $_GET['albumid'];?>"><i class="ti ti-plus fs-6"> Foto</i></a>
+                  <a class="cta-btn" href="tambahfoto.php?albumid=<?php echo $_GET['albumid'];?>" onclick="return confirm('Apakah Anda Yakin Akan menambahkan foto?')"><i class="ti ti-plus fs-6"> Foto</i></a>
                   <?php
                   }
                  ?>

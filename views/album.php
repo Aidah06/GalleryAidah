@@ -20,8 +20,8 @@ $baru = new c_album();
         <div class="row d-flex justify-content-center">
           <div class="col-lg-6 text-center">
 
-                <a class="cta-btn" href="tambahalbum.php"><i class="ti ti-plus fs-6"> album</i></a>
- 
+                <a class="cta-btn" href="tambahalbum.php" onclick="return confirm('Apakah Anda Yakin Akan menambahkan album?')"><i class="ti ti-plus fs-6 "> album</i></a>
+               
                  </div>
               </div>
             </div>
