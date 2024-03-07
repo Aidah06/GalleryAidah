@@ -36,17 +36,26 @@ if ($_GET['aksi'] == 'tambah') {
     $namaalbum = $_POST['namaalbum']; 
     $deskripsi = $_POST['deskripsi'];
     
+    $tipe = array('png','jpg');
     $photo = $_FILES["photo"]["name"];
      $tmp = $_FILES["photo"]["tmp_name"];
+     $x = explode('.',$photo);
+    $ekstensi = strtolower(end($x));
+    if(in_array($ekstensi,$tipe) == true){
     move_uploaded_file("$tmp", "../assets/images/" . $photo);
         
     $album->update($albumid, $namaalbum, $deskripsi, $photo);
         
-        if ($album){
+        
             echo "<script> alert('Album telah diubah');
          document.location.href = '../views/album.php';
          </script>";
-        }
+        }else{
+            echo "<script> alert('tolong masukan file dengan ekstensi (png/jpg)');
+            document.location.href = '../views/editalbum.php?albumid=$albumid';
+            </script>";
+        
+    }
     
     }elseif ($_GET["aksi"] == "delete") {
         $albumid = $_GET["albumid"];

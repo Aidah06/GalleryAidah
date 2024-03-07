@@ -37,17 +37,25 @@
         $deskripsifoto = $_POST['deskripsifoto'];
         $albumid= $_POST["albumid"];
 
+        $tipe = array('png','jpg');
         $lokasifile = $_FILES["lokasifile"]["name"];
         $tmp = $_FILES["lokasifile"]["tmp_name"];
+        $x = explode('.',$lokasifile);
+         $ekstensi = strtolower(end($x));
+        if(in_array($ekstensi,$tipe) == true){
         move_uploaded_file("$tmp", "../assets/images/" . $lokasifile);
 
        $foto->update($fotoid, $judulfoto, $deskripsifoto, $lokasifile);
         
-        if ($foto){
-            echo "<script> alert('foto telah diubah');
+       echo "<script> alert('foto telah diubah');
          document.location.href ='../views/foto.php?albumid=$albumid';
          </script>";
+        } else{
+            echo "<script> alert('tolong masukan file dengan ekstensi (png/jpg)');
+            document.location.href = '../views/editfoto.php?fotoid=$fotoid';
+            </script>";
         }
+    
     
     }elseif ($_GET["aksi"] == "delete") {
         $fotoid = $_GET["fotoid"];
